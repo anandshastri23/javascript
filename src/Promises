@@ -1,0 +1,14 @@
+let promiseToDoSomething = new Promise((resolve, reject) => {
+    let doSomething = true;
+    if (doSomething) {
+        resolve("Done!!!")
+    } else {
+        reject("Oops")
+    }
+});
+
+promiseToDoSomething.then((fromResolve) => {
+    console.log(fromResolve)
+}).catch((fromReject) => {
+    console.log(fromReject)
+});
